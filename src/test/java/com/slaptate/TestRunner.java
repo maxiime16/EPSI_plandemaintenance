@@ -8,6 +8,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
   features = "src/test/resources/features",
   glue = "com.slaptate.stepdefinitions",
-  plugin = {"pretty", "json:target/cucumber.json"}
+  plugin = {"pretty", "html:target/cucumber-report.html"}
 )
 public class TestRunner {}
